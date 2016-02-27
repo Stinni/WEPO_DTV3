@@ -1,0 +1,23 @@
+<div>
+	<label>
+		<span>Username: </span>
+		<input type="text" ng-model="username" />
+	</label>
+</div>
+
+<div>
+	<label>
+		<span>Password: </span>
+		<input type="password" ng-model="password" />
+	</label>
+</div>
+
+<div>
+	<button ng-click="onLogin()">
+		Login
+	</button>
+
+	<div ng-if="errorMessage">
+		{{errorMessage}}
+	</div>
+</div>
